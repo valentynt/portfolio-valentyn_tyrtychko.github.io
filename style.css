@@ -176,8 +176,31 @@ body{
     transition: 0.4s;
 }
 
+.gradient {
+    background: linear-gradient(to top,#e6e6e6,#bebebe);
+}
+
+.gradient2 {
+    background: linear-gradient(to top,#bebebe,#e6e6e6);
+}
+
+/* #perspective {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    background-image: url("img/book.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -250px;
+    transform: rotate3d(360, 90, -40, 65deg) rotateZ(-55deg);
+    box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.5);
+  } */
+
 .my-works {
-    padding: 35px 0 35px 0;
+    padding: 35px 0 0px 0;
     background-color: #cdcecf;
 }
 
