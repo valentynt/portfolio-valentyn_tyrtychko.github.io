@@ -40,8 +40,8 @@ body{
 .container{
     max-width: 1020px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav {
@@ -55,17 +55,19 @@ body{
     align-content: center;
 }
 
-.title {
+#header .title {
     font-size: 2.5rem;
     letter-spacing: 1px;
     color: #93b1c0; 
+    transition-duration: 2s;
 }
 
-.menu {
+#header .menu {
     width: 40%;
     min-width: 300px;
     display: flex;
     justify-content:space-between;
+    transition-duration: 3s;
 }
 
 .link-item {
@@ -83,25 +85,55 @@ body{
 .foto {
     padding: 65px 0 20px 0; 
     background-color: #cdcecf;
-  }
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+}
   
 .line {
     width: 15%;
     line-height: 0px;
-    border: 2px solid #444d52;
-    border-radius: 5px;
+    border-top: 3px solid #444d52;
     margin: 0 auto;
     margin-bottom: 10px;
-  }
+}
 
-.name {
+#main .line-first {
+    transition-duration: 1.4s;
+}
+
+#main .name {
     font-family: 'Proxima Nova Bold',sans-serif;
     text-align: center;
     font-size: 1.9rem;
     line-height: 2rem;
     margin-bottom: 20px;
     color: #444d52;
-  }
+    transition-duration: 1.4s;
+}
+
+#main .img {
+    transition-duration: 2s;
+}
 
 .sub-img {
     display: block;
@@ -109,45 +141,53 @@ body{
     height: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
-  }
+    animation-duration: 2s;
+}
 
-.age {
+#main .age {
     font-family: 'Montserrat_Regular', sans-serif;
     text-align: center;
     font-size: 1.3rem;
     line-height: 1.5rem;
     color: #444d52;
     margin-bottom: 8px;
-  }
+    transition-duration: 3s;
+}
+
+#main .line-second {
+    transition-duration: 3s;
+}
 
 .skills {
     font-family: 'Proxima Nova Bold',sans-serif;  
     padding: 30px 0 20px 0; 
     background-color: #bebebe; 
-  }
+}
 
-.title-skills {
+#main .title-skills {
     font-size: 2.2rem;
     line-height: 2.4rem;
     color: #465258;  
     text-align: center;
     margin:0 0 20px 0px;
-  }
+    transition-duration: 3.2s;
+}
 
-.list {
+#main .list {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 35px;
-  }
+    transition-duration: 3.7s;
+}
 
 .sub-list {
     font-family: 'Montserrat_Regular', sans-serif;
     font-size: 1.6rem;
     line-height: 1.8rem;
     color: #465258;  
-  }
+}
 
 .sub-list::after {
     content: ' /';
@@ -156,11 +196,19 @@ body{
 .sertificate {
     display: flex;
     justify-content:space-around;
-  }
+}
 
 .sertificate a{
     display: block;
-  }
+}
+
+#main .img-sertificate {
+    transition-duration: 3s;
+}
+
+#main .second {
+    transition-duration: 4s;
+}
 
 .sub-img-sertificate {
     display: block;
@@ -169,11 +217,12 @@ body{
     height: 100%;
     border: 1px solid #cdcecf;
     border-radius: 6px;
-  }
+    transition: 0.5s;
+}
 
 .sub-img-sertificate:hover{
-    transform: scale(1.15);
-    transition: 0.4s;
+    transform: scale(1.2);
+    transition: 0.9s;
 }
 
 .gradient {
@@ -184,38 +233,27 @@ body{
     background: linear-gradient(to top,#3c501b,#bebebe);
 }
 
-/* #perspective {
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    background-image: url("img/book.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 50%;
-    left: 50%;
-    margin-left: -200px;
-    margin-top: -250px;
-    transform: rotate3d(360, 90, -40, 65deg) rotateZ(-55deg);
-    box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.5);
-  } */
-
 .my-works {
     padding: 35px 0 0px 0;
     background-color: #cdcecf;
 }
 
-.title-works {
+#main .title-works {
     font-family: 'Proxima Nova Bold',sans-serif;
     font-size: 2.2rem;
     line-height: 2.4rem;
     color: #58666d;  
     text-align: center;
     margin:0 0 7px 0px; 
+    transition-duration: 1.5s;
+}
+
+#main .line-third {
+    transition-duration: 1.5s;
 }
 
 .my-works .line {
     margin-bottom: 35px;
-    border: 2px solid #58666d;
 }
 
 .works {
@@ -229,9 +267,17 @@ body{
     width: 45%;
 }
 
-/* .item-works:nth-child(2n){
-    margin-right: 0px;
-} */
+#main .item-works-first {
+    transition-duration: 2s;
+}
+
+#main .item-works-second {
+    transition-duration: 2.8s;
+}
+
+#main .item-works-third {
+    transition-duration: 2.5s;
+}
 
 .sub-item-works {
     display: block;
@@ -244,11 +290,12 @@ body{
     border: 1px solid #93b1c0;
     border-radius: 3px;
     margin: 0 auto;
+    transition: 0.5s;
 }
 
 .sub-works:hover{
-    transform: scale(1.15);
-    transition: 0.4s;
+    transform: scale(1.2);
+    transition: 0.9s;
 }
 
      /* -------------Секция footer---------------- */
@@ -256,32 +303,35 @@ body{
 .contact {
     padding: 35px 0 35px 0;
     background-color: #2b3a13;
-  }
+}
 
 .sub-contact {
     color: #93b1c0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   }
+}
 
-.title-contact {
+#footer .title-contact {
     font-family: 'Montserrat_Regular', sans-serif;
     font-size: 2rem;
     line-height: 2.2rem;
+    transition-duration: 2.5s;
 }
 
-.location {
+#footer .location {
     font-family: 'Montserrat_Regular', sans-serif;
     font-size: 1.5rem;
-    line-height: 1.7rem; 
+    line-height: 1.7rem;
+    transition-duration: 2s;
 }
 
-.networks {
+#footer .networks {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 200px;
+    transition-duration: 2.5s;
 }
 
 .item-networks {

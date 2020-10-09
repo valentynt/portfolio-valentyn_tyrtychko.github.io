@@ -6,43 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="libs/csshake.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>portfolio html-coder</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <nav class="nav">
-        <div class="title">Portfolio</div>
-        <ul class="menu">
+        <div class="title" data-aos="fade-right">Portfolio</div>
+        <ul class="menu" data-aos="fade-left">
           <li class="item">
-            <a href="#skills" class="link-item">Skills</a>
+            <a href="#skills" class="link-item shake-slow">Skills</a>
           </li>
           <li class="item">
-            <a href="#my_works" class="link-item">My works</a>
+            <a href="#my_works" class="link-item shake-slow">My works</a>
           </li>
           <li class="item">
-            <a href="#contact" class="link-item">Contacts</a>
+            <a href="#contact" class="link-item shake-slow">Contacts</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="main">
+  <main class="main" id="main">
     <section class="foto gradient">
       <div class="container">
-        <div class="line"></div>
-        <h1 class="name">HTML-coder/Front-End developer</h1>
-        <div class="img"><img class="sub-img" src="img/foto.jpg" alt="foto"></div>
-        <div class="age" id="age">Valentyn Tyrtychko</div>
-        <div class="line"></div>
+        <div class="line line-first" data-aos="fade-up"></div>
+        <h1 class="name" data-aos="fade-up">HTML-coder/Front-End developer</h1>
+        <div class="img" data-aos="fade-up"><img class="sub-img animated" src="img/foto.jpg" alt="foto"></div>
+        <div class="age" data-aos="fade-up" id="age">Valentyn Tyrtychko</div>
+        <div class="line line-second" data-aos="fade-up"></div>
       </div>
     </section>
     <section class="skills">
       <div class="container">
-        <h2 class="title-skills" id="skills">Skills:</h2>
-        <ul class="list">
+        <h2 class="title-skills" id="skills" data-aos="fade-up">Skills:</h2>
+        <ul class="list" data-aos="fade-up">
           <li class="sub-list">HTML5</li>
           <li class="sub-list">CSS3</li>
           <li class="sub-list">Java Script(Basic)</li>
@@ -52,48 +54,54 @@
           <li class="sub-list">Jira</li>
         </ul>
         <ul class="sertificate">
-          <li class="img-sertificate"><a href="https://certificate.ithillel.ua/view/63669135/en" target="_blank"><img
-                src="img/sert1.png" class="sub-img-sertificate" alt="sertificate"></a></li>
-          <li class="img-sertificate"><a href="https://certificate.ithillel.ua/view/17208569/en" target="_blank"><img
-                src="img/sert2.png" class="sub-img-sertificate" alt="sertificate"></a></li>
+          <li class="img-sertificate" data-aos="fade-up-right"><a
+              href="https://certificate.ithillel.ua/view/63669135/en" target="_blank"><img src="img/sert1.png"
+                class="sub-img-sertificate" alt="sertificate"></a></li>
+          <li class="img-sertificate second" data-aos="fade-up-left"><a
+              href="https://certificate.ithillel.ua/view/17208569/en" target="_blank"><img src="img/sert2.png"
+                class="sub-img-sertificate" alt="sertificate"></a></li>
         </ul>
       </div>
     </section>
     <section class="my-works gradient2">
       <div class="container">
-        <h2 class="title-works" id="my_works">My Works:</h2>
-        <div class="line"></div>
+        <h2 class="title-works" id="my_works" data-aos="fade-up">My Works:</h2>
+        <div class="line line-third" data-aos="fade-up"></div>
         <ul class="works">
-          <li class="item-works"><a href="https://valentynt.github.io/valentyn_adaptive_layout.github.io/"
-              class="sub-item-works" target="_blank"><img src="img/sport.png" alt="image_sport" class="sub-works"></a>
+          <li class="item-works item-works-first" data-aos="fade-up-right"><a
+              href="https://valentynt.github.io/valentyn_adaptive_layout.github.io/" class="sub-item-works"
+              target="_blank"><img src="img/sport.png" alt="image_sport" class="sub-works"></a>
           </li>
-          <li class="item-works"><a href="https://valentynt.github.io/flexbox_adaptive.github.io/"
-              class="sub-item-works" target="_blank"><img src="img/flexbox.png" alt="image_flexbox"
-                class="sub-works"></a></li>
-          <li class="item-works"><a href="https://valentynt.github.io/Maket_Business.github.io/" class="sub-item-works"
-              target="_blank"><img src="img/business.png" alt="image_business" class="sub-works"></a></li>
-          <li class="item-works"><a href="https://valentynt.github.io/maket_bislite.github.io/" class="sub-item-works"
-              target="_blank"><img src="img/bislite.png" alt="image_bislite" class="sub-works"></a></li>
-          <li class="item-works"><a href="https://valentynt.github.io/calculator.github.io/" class="sub-item-works"
-              target="_blank"><img src="img/calculator_sm.png" alt="image_calculator" class="sub-works"></a></li>
+          <li class="item-works item-works-second" data-aos="fade-up-left"><a
+              href="https://valentynt.github.io/flexbox_adaptive.github.io/" class="sub-item-works" target="_blank"><img
+                src="img/flexbox.png" alt="image_flexbox" class="sub-works"></a></li>
+          <li class="item-works item-works-first" data-aos="fade-up-right"><a
+              href="https://valentynt.github.io/Maket_Business.github.io/" class="sub-item-works" target="_blank"><img
+                src="img/business.png" alt="image_business" class="sub-works"></a></li>
+          <li class="item-works item-works-second" data-aos="fade-up-left"><a
+              href="https://valentynt.github.io/maket_bislite.github.io/" class="sub-item-works" target="_blank"><img
+                src="img/bislite.png" alt="image_bislite" class="sub-works"></a></li>
+          <li class="item-works item-works-third" data-aos="fade-up"><a
+              href="https://valentynt.github.io/calculator.github.io/" class="sub-item-works" target="_blank"><img
+                src="img/calculator_sm.png" alt="image_calculator" class="sub-works"></a></li>
         </ul>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="contact">
       <div class="container">
         <div class="sub-contact">
-          <h2 class="title-contact" id="contact">Contacts:</h2>
-          <ul class="networks">
-            <li class="item-networks"><a href="https://t.me/Valentyn_Tyrtychko" class="sub-networks telegram"
+          <h2 class="title-contact" data-aos="fade-right" id="contact">Contacts:</h2>
+          <ul class="networks" data-aos="zoom-in">
+            <li class="item-networks shake-slow"><a href="https://t.me/Valentyn_Tyrtychko" class="sub-networks telegram"
                 target="_blank"><i class="fab fa-telegram"></i></a></li>
-            <li class="item-networks"><a href="https://github.com/valentynt" class="sub-networks github"
+            <li class="item-networks shake-slow"><a href="https://github.com/valentynt" class="sub-networks github"
                 target="_blank"><i class="fab fa-github"></i></a></li>
-            <li class="item-networks"><a href="mailto:valentyntyrtychko@gmail.com" class="sub-networks email"
+            <li class="item-networks shake-slow"><a href="mailto:valentyntyrtychko@gmail.com" class="sub-networks email"
                 target="_blank"><i class="fas fa-at"></i></a></li>
           </ul>
-          <div class="location">Ukraine,Odessa</div>
+          <div class="location" data-aos="fade-left">Ukraine,Odessa</div>
         </div>
       </div>
     </div>
@@ -104,6 +112,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 
 </body>
