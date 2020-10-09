@@ -1,2 +1,2 @@
 # portfolio-valentyn_tyrtychko.github.io
-!(screenshots/screnPortfolio.png "portfolio")
+![alt tag](screenshots/screnPortfolio.png "portfolio")
